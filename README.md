@@ -1,24 +1,81 @@
-🏨 Hotel Website
+# 🏨 Hotel Website
 
-📌 Description
+Site web d’hôtel développé en **PHP / MySQL**, permettant la présentation de l’établissement, la consultation des chambres, la réservation en ligne et la gestion des comptes utilisateurs.
 
-Ce projet est un petit site web pour un hôtel, permettant :
+## 🌐 Démo en ligne
 
- - La présentation de l’hôtel
+👉 [Voir le site](https://lightsalmon-nightingale-878312.hostingersite.com)
 
- - La réservation de chambres
+---
 
- - Un formulaire de contact (avec envoi d’email via mail.js)
+## 📌 Description
 
- - La création de compte / connexion pour les utilisateurs
+Ce projet est un site web d’hôtel conçu pour offrir une expérience simple et intuitive aux visiteurs.
 
+Il permet notamment de :
 
-Il est développé en :
+- présenter l’hôtel et ses services
+- consulter les chambres disponibles
+- réserver une chambre
+- contacter l’hôtel via un formulaire
+- créer un compte utilisateur
+- se connecter à son espace
 
- - PHP (backend)
+---
 
- - MySQL (base de données)
+## ✨ Fonctionnalités
 
- - CSS (mise en page)
+### Côté visiteur
+- Page d’accueil de présentation
+- Consultation des chambres
+- Consultation des services proposés
+- Formulaire de contact
+- Création de compte
+- Connexion utilisateur
 
- - JavaScript + EmailJS (mail.js) pour l’envoi d’e-mails
+### Côté utilisateur connecté
+- Réservation de chambre
+- Accès à un espace personnel selon le rôle
+
+### Côté administration
+- Gestion des chambres
+- Gestion des utilisateurs
+- Gestion des réservations
+
+---
+
+## 🛠️ Technologies utilisées
+
+- **PHP** — logique back-end
+- **MySQL** — base de données
+- **HTML / CSS** — structure et mise en page
+- **JavaScript** — interactions côté client
+- **EmailJS** — envoi d’e-mails via le formulaire de contact
+- **Composer** — gestion des dépendances PHP
+- **phpdotenv** — gestion des variables d’environnement
+
+---
+
+## 🗂️ Structure du projet
+
+```bash
+public/
+│── index.php
+│── reservation.php
+│── assets/
+│   ├── css/
+│   ├── js/
+│   └── images/
+
+src/
+│── config/
+│   └── Database.php
+│── controllers/
+│── models/
+│   ├── User.php
+│   ├── Room.php
+│   └── Reservation.php
+│── views/
+│   ├── auth/
+│   ├── partials/
+│   └── ...
